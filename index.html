@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="anteather.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="anteather.js"></script>
+  </head>
+  <body>
+    <button name="clair" value="clair" onclick="scanner('clair')">Clair</button>
+    <button name="grype" value="grype" onclick="scanner('grype')">Grype</button>
+    <button name="trivy" value="trivy" onclick="scanner('trivy')">Trivy</button>
+    <div class="containerSecurityScanner" style="position:absolute; width: 45%; top: 2%; left:25%;">
+      <span><canvas id="doughnutChart"></canvas></span>
+      <span><p id="tableData"></p></span>
+    </div>
+  </body>
+</html>

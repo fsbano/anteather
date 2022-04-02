@@ -1,0 +1,28 @@
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+th {
+  border: 1px solid #4CAF50;
+  background-color: #4CAF50;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  font-size: 18px;
+}
+
+body {
+  font-size: 18px;
+}
