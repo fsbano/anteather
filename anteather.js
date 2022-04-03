@@ -142,7 +142,7 @@ class Anteather {
       $.each(value.matches, function(k, v) {
         $.each(v.matchDetails, function(w, z) {
           text += "<tr>";
-          text += "<td>" + z.searchedBy.package.name + "</td><td align='center'>" + z.searchedBy.distro.type + "</td><td align='center'>" + z.searchedBy.distro.version + "</td><td align='center'>" + v.vulnerability.id + "</td>";
+          text += "<td>" + v.artifact.name + "</td><td align='center'>" + z.searchedBy.distro.type + "</td><td align='center'>" + z.searchedBy.distro.version + "</td><td align='center'>" + v.vulnerability.id + "</td>";
           text += "</tr>";
         });
       });
