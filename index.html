@@ -14,21 +14,6 @@
       <span><canvas id="doughnutChart"></canvas></span>
       <span><p id="tableData"></p></span>
     </div>
-    <script src="keycloak.js"></script>
-    <script>
-        function initKeycloak() {
-            var keycloak = new Keycloak({
-                url: 'http://localhost:8080$',
-                realm: 'anteather',
-                clientId: 'myapp'
-            });
-            keycloak.init().then(function(authenticated) {
-                alert(authenticated ? 'authenticated' : 'not authenticated');
-            }).catch(function() {
-                alert('failed to initialize');
-            });
-        }
-    </script>
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
