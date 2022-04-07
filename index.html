@@ -17,7 +17,11 @@
     <script src="keycloak.js"></script>
     <script>
         function initKeycloak() {
-            var keycloak = new Keycloak();
+            var keycloak = new Keycloak({
+                url: 'http://localhost:8080$',
+                realm: 'anteather',
+                clientId: 'myapp'
+            });
             keycloak.init().then(function(authenticated) {
                 alert(authenticated ? 'authenticated' : 'not authenticated');
             }).catch(function() {
